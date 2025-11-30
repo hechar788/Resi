@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useUser } from '@clerk/clerk-react'
 
-export const Route = createFileRoute('/_clientAuthed/clerk')({
+export const Route = createFileRoute('/_clientAuthed/demo/clerk')({
   component: App,
 })
 
