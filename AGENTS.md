@@ -24,19 +24,30 @@
 - Adhere to the following framework usage expectations when implementing aspects of the applications
 
     ## TanStack Query
-    - Always use Query for server data fetching, caching, mutations, and background updates. 
-    - Use `useQuery`/`useMutation` instead of ad-hoc fetch calls, and colocate query keys and data mappers under the relevant feature folder.
+    - Avoid `fetch` calls directly in components. Always use `useQuery` for server data fetching, let it own the lifecycle of remote data: caching, deduplication, background refresh, stale-while-revalidate, and invalidation.
+    - Use `useMutation` for writes and after a successful mutation, always invalidate or update relevant queries using `queryClient.invalidateQueries` or `queryClient.setQueryData`.
+    - Hooks must stay colocated with the feature they serve.
+    - Keep query keys stable and descriptive (`["orders", orderId]`); colocate key factories next to the functions that read/write that data.
+    - Server functions should be the **only** place that talk to Drizzle/Neon. Queries should call server functions, never DB helpers directly.
+    - Never store server-derived data in TanStack Store or `useState`. If the data comes from the server, Query is responsible for holding and refreshing it.
+    - Prefer small, focused queries over multi-purpose “god queries.” Each query should fetch exactly the data needed by that UI surface, no more.
 
     ## TanStack Form
-    - When creating forms, use TanStack Form for validation, submission, and controlled inputs. Prefer schema-backed validation (Zod) and reuse existing field components before introducing custom form logic.
+    - When creating forms, use TanStack Form for validation, submission, and controlled inputs.
+    - **Always use a Zod schema with the `zodValidator` adapter.** Zod becomes the single source of truth for what “valid” form data looks like, and TanStack Form uses that schema to:
+        - validate fields on change/blur/submit,
+        - surface structured field-level errors, and
+        - prevent invalid submissions automatically.
+    - Use Zod coercion (`z.coerce.number()`, `z.string().trim()`) to convert raw input strings into correctly typed form values.
+    - Reuse field components and keep validation at the schema level—never scatter validation logic across `useEffect`, `onBlur`, or ad-hoc conditionals.
 
-    # TanStack Table
+    ## TanStack Table
     - For sortable, filterable, or paginated tables, default to TanStack Table. Only hand-roll tables when the feature is too simple to justify the full table model.
 
-    # TanStack Store 
+    ## TanStack Store
     - Use Store when the state is client-only, cross-component, and not derived from server data. Keep stores small, domain-scoped, and avoid duplicating data already managed by Query.
 
-    # ShadCN/UI
+    ## ShadCN/UI
     - Extend or wrap existing primitives rather than creating new components from scratch unless required.
     - Use the **ShadCN/UI MCP server** before building. Use the following tools where applicable:
         - `List/search items`: Look for available ShadCN/UI components that could be used to implement a feature rather than building features from scratch.
@@ -47,19 +58,20 @@
 
 
 ## Server Function Guidelines
-- Server functions should stay small, stateless, and validate all inputs at the boundary using Zod.
+- Server functions should stay small, stateless, and **validate all inputs at the boundary using Zod**. Never trust raw `req.json()` or `formData()`—always parse them with a schema before doing anything else.
+- Use Zod’s `.parse()` or `.safeParse()` to guarantee runtime safety and typed values. This avoids implicit “stringly-typed” form data by coercing and validating everything in one place.
 - Only server functions should talk to Drizzle/Neon; never call Drizzle directly from the client.
 - Return clean, mapped DTOs rather than leaking raw DB rows to the client.
-- Keep server functions colocated with their feature, not at top-level /server.
-- Organise server functions using a domain-first folder structure. Use `src/server/<domain>/<subdomain>/<name>.ts` to keep related logic together and predictable (`src/server/  orders/items/addItem.ts`, `src/server/orders/items/removeItem.ts`).
+- Keep server functions colocated with their feature, not at the top-level `/server`.
+- Organise server functions using a domain-first folder structure. Use `src/server/<domain>/<subdomain>/<name>.ts` to keep related logic together and predictable (`src/server/orders/items/addItem.ts`, `src/server/orders/items/removeItem.ts`).
 - Do not colocate server functions inside routes or components unless the logic is truly one-off and will never be reused. Anything representing real domain behaviour (orders, merchants, customers, menus, onboarding, auth) belongs under `src/server/<domain>/`.
 - Keep folders shallow and descriptive. Start with `src/server/<domain>/<action>.ts`, and introduce subfolders only when the domain grows (`orders/items/`, `merchant/profile/`, etc.).
 - This structure ensures loaders, actions, and React Query hooks all call a single source of truth for domain logic.
 
 
 ## Routing Conventions
-- Keep loader logic thin: fetch or assemble data, validate params, and return mapped DTOs.
-- Move heavy logic into domain functions under src/features/<domain>/api.
+- Keep loader logic thin: fetch or assemble data, validate params with Zod, and return mapped DTOs.
+- Move heavy logic into domain functions under `src/features/<domain>/api`.
 - Keep actions side-effect focused (mutations, writes) and ensure all mutations validate inputs before DB access.
 - Prefer small loaders per route instead of giant multi-purpose loaders.
 
@@ -69,7 +81,7 @@
 - Document all parameters and return values with @param and @returns tags, and annotate error cases when relevant (@throws).
 - For complex functions or classes, include an @example block demonstrating typical usage; omit it when the function or method is simple.
 - Keep descriptions concise and action-focused (one–three sentences). Avoid restating the function name; explain intent, inputs, and expected behavior.
-- For server functions, document validation expectations, required permissions, and whether the call mutates persistent data.
+- For server functions, document validation expectations (e.g., “Input must satisfy `UserSchema`”), required permissions, and whether the call mutates persistent data.
 - Update JSDoc whenever function signatures change—out-of-date comments are worse than none.
 - Prefer documenting behavior rather than implementation details; internal logic can change, but the contract should remain clear.
 
