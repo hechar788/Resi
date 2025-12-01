@@ -28,7 +28,7 @@ const insertTodo = createServerFn({
     await client.query(`INSERT INTO todos (title) VALUES ($1)`, [data.title])
   })
 
-export const Route = createFileRoute('/_clientAuthed/demo/neon')({
+export const Route = createFileRoute('/_clientAuthed/demo/_header/neon')({
   component: App,
   loader: async () => {
     const todos = await getTodos()
@@ -144,7 +144,7 @@ function DBConnectionError() {
             </span>
             <div>
               Use the{' '}
-              <code className="bg-black/30 px-2 py-1 rounded">db/init.sql</code>{' '}
+              <code className="bg-black/30 px-2 py-1 rounded">db/init.sql</code>{" "}
               file to create the database
             </div>
           </li>

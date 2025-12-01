@@ -21,7 +21,7 @@ const createTodo = createServerFn({
     return { success: true }
   })
 
-export const Route = createFileRoute('/_clientAuthed/demo/drizzle')({
+export const Route = createFileRoute('/_clientAuthed/demo/_header/drizzle')({
   component: DemoDrizzle,
   loader: async () => await getTodos(),
 })

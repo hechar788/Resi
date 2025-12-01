@@ -8,7 +8,7 @@ function getNames() {
   )
 }
 
-export const Route = createFileRoute('/_clientAuthed/demo/start/api-request')({
+export const Route = createFileRoute('/_clientAuthed/demo/_header/start/api-request')({
   component: Home,
 })
 

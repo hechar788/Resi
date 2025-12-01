@@ -24,7 +24,7 @@ import type { RankingInfo } from '@tanstack/match-sorter-utils'
 
 import type { Person } from '@/data/demo-table-data'
 
-export const Route = createFileRoute('/_clientAuthed/demo/table')({
+export const Route = createFileRoute('/_clientAuthed/demo/_header/table')({
   component: TableDemo,
 })
 

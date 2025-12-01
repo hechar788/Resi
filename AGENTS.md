@@ -56,6 +56,13 @@
         - `Installing`: Grab the exact `npx shadcn@latest add <item>` and scaffold missing primitives from the repo root so Radix dependencies and files stay in sync.
         - `Post-add audit checklist`: After adding a component, run the MCP audit to ensure files landed, deps are installed, and required config/hooks (e.g., Tailwind, `cn`) are wired correctly.
 
+    ## Lucide Icons
+    - Always use Lucide icons instead of creating custom SVGs. Import icons from `lucide-react` and keep usage consistent across features.
+    - Check the Lucide catalog before introducing any new visual asset. Only use a custom icon if no suitable Lucide option exists.
+    - If no Lucide icon fits the intended meaning, **ask before adding a custom one**. Custom SVGs should be a last resort.
+    - Keep icon sizing and styling consistent using Tailwind utilities or ShadCN defaults.
+
+
 
 ## Server Function Guidelines
 - Server functions should stay small, stateless, and **validate all inputs at the boundary using Zod**. Never trust raw `req.json()` or `formData()`—always parse them with a schema before doing anything else.
