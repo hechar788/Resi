@@ -8,7 +8,7 @@
 ## Project Structure & Module Organization
 - File-based routes live in `src/routes`; each file exports `Route`, and folders map to URLs (`dashboard/index.tsx` → `/dashboard`).
 - UI building blocks stay in `src/components`, domain helpers in `src/lib`, hooks in `src/hooks`, and mock/faker data in `src/data`.
-- Drizzle schemas reside under `/db`, generated SQL migrations land in `/drizzle`, and client utilities use `src/db` + `src/db.ts`.
+- Drizzle schemas reside under `src/db/schemas/` with one file per table (`users.schema.ts`), exported via `src/db/schemas/index.ts` barrel file; generated SQL migrations land in `/drizzle`, and the database client is configured in `src/db/index.ts`.
 - Static assets live in `public/`, while `src/styles.css` and `router.tsx` host global styles plus provider wiring.
 
 
