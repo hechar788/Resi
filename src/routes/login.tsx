@@ -3,7 +3,7 @@ import { AuthForm } from '@/components/auth/AuthForm';
 import { useAuthState } from '@/components/auth/useAuthState';
 import { Button } from '@/components/ui/button';
 import { signOut } from 'firebase/auth';
-import { auth } from '@/lib/firebase';
+import { auth } from '@/lib/firebase/firebase';
 
 export const Route = createFileRoute('/login')({
   component: LoginPage,
