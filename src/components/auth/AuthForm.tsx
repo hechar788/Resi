@@ -21,6 +21,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+interface AuthFormProps {
+  onAuthenticated?: (user: User) => void;
+}
+
 /**
  * Validation schemas for email/password authentication
  */
@@ -50,8 +54,9 @@ function logUserDetails(user: User) {
 
 /**
  * Authentication form component with email/password and SSO login
+ * @param onAuthenticated optional callback fired after successful login/signup
  */
-export function AuthForm() {
+export function AuthForm({ onAuthenticated }: AuthFormProps) {
   const [mode, setMode] = useState<"login" | "signup">("login");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -82,7 +87,9 @@ export function AuthForm() {
           );
         }
 
-        logUserDetails(userCredential.user);
+        const authenticatedUser = userCredential.user;
+        logUserDetails(authenticatedUser);
+        onAuthenticated?.(authenticatedUser);
       } catch (err: any) {
         setError(err.message || "Authentication failed");
         console.error("Auth error:", err);
@@ -102,7 +109,9 @@ export function AuthForm() {
     try {
       const provider = new GoogleAuthProvider();
       const userCredential = await signInWithPopup(auth, provider);
-      logUserDetails(userCredential.user);
+      const authenticatedUser = userCredential.user;
+      logUserDetails(authenticatedUser);
+      onAuthenticated?.(authenticatedUser);
     } catch (err: any) {
       setError(err.message || "Google login failed");
       console.error("Google login error:", err);

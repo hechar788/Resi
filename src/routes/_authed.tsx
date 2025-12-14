@@ -1,8 +1,77 @@
 import { createFileRoute, Outlet, redirect } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
+import type { DecodedIdToken } from 'firebase-admin/auth'
 
 interface AuthContext {
-  user?: any
+  user?: DecodedIdToken
+}
+
+const getRedirectPath = (location: {
+  href: string
+  pathname: string
+  searchStr?: string
+}) => {
+  const searchStr =
+    typeof location.searchStr === 'string' && location.searchStr.length > 0
+      ? `?${location.searchStr}`
+      : ''
+  return location.href || `${location.pathname}${searchStr}`
+}
+
+const redirectToLogin = (redirectPath: string) =>
+  redirect({
+    to: '/login',
+    search: {
+      redirect: redirectPath,
+    },
+  })
+
+const getTokenFromRequest = (request?: Request | null) => {
+  if (!request) {
+    return null
+  }
+
+  const authHeader = request.headers.get('Authorization')
+  const headerToken = authHeader?.startsWith('Bearer ')
+    ? authHeader.substring(7)
+    : null
+  if (headerToken) {
+    return headerToken
+  }
+
+  const cookies = request.headers.get('cookie')
+  const cookieToken = cookies
+    ?.split(';')
+    .find((cookie) => cookie.trim().startsWith('firebase_token='))
+    ?.split('=')[1]
+
+  return cookieToken ? decodeURIComponent(cookieToken) : null
+}
+
+const getClientToken = async (): Promise<string | null> => {
+  if (typeof window === 'undefined') {
+    return null
+  }
+
+  const [{ auth }, firebaseAuth] = await Promise.all([
+    import('@/lib/firebase/firebase'),
+    import('firebase/auth'),
+  ])
+
+  const user =
+    auth.currentUser ??
+    (await new Promise<firebaseAuth.User | null>((resolve) => {
+      const unsubscribe = firebaseAuth.onAuthStateChanged(auth, (nextUser) => {
+        unsubscribe()
+        resolve(nextUser)
+      })
+    }))
+
+  if (!user) {
+    return null
+  }
+
+  return await user.getIdToken()
 }
 
 /**
@@ -11,61 +80,28 @@ interface AuthContext {
 const verifyToken = createServerFn({ method: 'GET' })
   .inputValidator((input: string) => input)
   .handler(async ({ data }: { data: string }) => {
-    const { verifyAuthToken } = await import('../lib/firebase-admin')
+    const { verifyAuthToken } = await import('@/lib/firebase/firebase-admin')
     return await verifyAuthToken(data)
   })
 
 export const Route = createFileRoute('/_authed')({
   beforeLoad: async ({ context, location }): Promise<AuthContext> => {
-    // Get the auth token from the request (server-side only)
-    const request = (context as any).request as Request | undefined
+    const redirectPath = getRedirectPath(location)
+    const request = (context as { request?: Request }).request
 
-    if (!request) {
-      throw redirect({
-        to: '/',
-        search: {
-          redirect: location.href,
-        },
-      })
-    }
-
-    // Try to get token from Authorization header
-    const authHeader = request.headers.get('Authorization')
-    let token = authHeader?.startsWith('Bearer ')
-      ? authHeader.substring(7)
-      : null
-
-    // If not in Authorization header, try to get it from cookies
-    if (!token) {
-      const cookies = request.headers.get('cookie')
-      const cookieToken = cookies
-        ?.split(';')
-        .find((c) => c.trim().startsWith('firebase_token='))
-        ?.split('=')[1]
-      token = cookieToken || null
-    }
+    const tokenFromRequest = getTokenFromRequest(request)
+    const token = tokenFromRequest ?? (await getClientToken())
 
     if (!token) {
-      throw redirect({
-        to: '/',
-        search: {
-          redirect: location.href,
-        },
-      })
+      throw redirectToLogin(redirectPath)
     }
 
     const result = await verifyToken({ data: token })
 
     if (!result.success || !result.user) {
-      throw redirect({
-        to: '/',
-        search: {
-          redirect: location.href,
-        },
-      })
+      throw redirectToLogin(redirectPath)
     }
 
-    // Return the verified user data to child routes
     return {
       user: result.user,
     }

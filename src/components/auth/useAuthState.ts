@@ -1,6 +1,19 @@
 import { useState, useEffect } from "react";
-import { onAuthStateChanged, type User } from "firebase/auth";
+import { onAuthStateChanged, onIdTokenChanged, type User } from "firebase/auth";
 import { auth } from "@/lib/firebase/firebase";
+
+const TOKEN_COOKIE = "firebase_token";
+
+const setAuthCookie = async (user: User | null) => {
+  if (!user) {
+    document.cookie = `${TOKEN_COOKIE}=; path=/; max-age=0; SameSite=Lax`;
+    return;
+  }
+
+  const token = await user.getIdToken();
+  const encodedToken = encodeURIComponent(token);
+  document.cookie = `${TOKEN_COOKIE}=${encodedToken}; path=/; max-age=3600; SameSite=Lax`;
+};
 
 /**
  * Hook to monitor Firebase authentication state
@@ -24,6 +37,7 @@ export function useAuthState() {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
+      void setAuthCookie(currentUser);
 
       if (currentUser) {
         console.log("=== Auth State Changed: User Logged In ===");
@@ -44,7 +58,14 @@ export function useAuthState() {
       }
     });
 
-    return () => unsubscribe();
+    const unsubscribeToken = onIdTokenChanged(auth, (currentUser) => {
+      void setAuthCookie(currentUser);
+    });
+
+    return () => {
+      unsubscribe();
+      unsubscribeToken();
+    };
   }, []);
 
   return { user, loading };
