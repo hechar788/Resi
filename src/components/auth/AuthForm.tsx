@@ -33,24 +33,6 @@ const passwordSchema = z
   .string()
   .min(6, "Password must be at least 6 characters");
 
-/**
- * Logs all available user details to console
- */
-function logUserDetails(user: User) {
-  console.log("=== User Authentication Details ===");
-  console.log("UID:", user.uid);
-  console.log("Email:", user.email);
-  console.log("Email Verified:", user.emailVerified);
-  console.log("Display Name:", user.displayName);
-  console.log("Photo URL:", user.photoURL);
-  console.log("Phone Number:", user.phoneNumber);
-  console.log("Provider Data:", user.providerData);
-  console.log("Creation Time:", user.metadata.creationTime);
-  console.log("Last Sign In Time:", user.metadata.lastSignInTime);
-  console.log("Tenant ID:", user.tenantId);
-  console.log("Full User Object:", user);
-  console.log("=====================================");
-}
 
 /**
  * Authentication form component with email/password and SSO login
@@ -88,7 +70,6 @@ export function AuthForm({ onAuthenticated }: AuthFormProps) {
         }
 
         const authenticatedUser = userCredential.user;
-        logUserDetails(authenticatedUser);
         onAuthenticated?.(authenticatedUser);
       } catch (err: any) {
         setError(err.message || "Authentication failed");
@@ -110,7 +91,6 @@ export function AuthForm({ onAuthenticated }: AuthFormProps) {
       const provider = new GoogleAuthProvider();
       const userCredential = await signInWithPopup(auth, provider);
       const authenticatedUser = userCredential.user;
-      logUserDetails(authenticatedUser);
       onAuthenticated?.(authenticatedUser);
     } catch (err: any) {
       setError(err.message || "Google login failed");

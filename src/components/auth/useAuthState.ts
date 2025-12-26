@@ -16,15 +16,14 @@ const setAuthCookie = async (user: User | null) => {
 };
 
 /**
- * Hook to monitor Firebase authentication state
- * Logs user details whenever auth state changes
+ * Hook to monitor Firebase authentication state and manage auth cookies
  *
  * @returns Current user object or null if not authenticated
  *
  * @example
  * ```tsx
  * function MyComponent() {
- *   const user = useAuthState();
+ *   const { user } = useAuthState();
  *   return <div>{user ? `Hello ${user.email}` : 'Not logged in'}</div>;
  * }
  * ```
@@ -38,24 +37,6 @@ export function useAuthState() {
       setUser(currentUser);
       setLoading(false);
       void setAuthCookie(currentUser);
-
-      if (currentUser) {
-        console.log("=== Auth State Changed: User Logged In ===");
-        console.log("UID:", currentUser.uid);
-        console.log("Email:", currentUser.email);
-        console.log("Email Verified:", currentUser.emailVerified);
-        console.log("Display Name:", currentUser.displayName);
-        console.log("Photo URL:", currentUser.photoURL);
-        console.log("Phone Number:", currentUser.phoneNumber);
-        console.log("Provider Data:", currentUser.providerData);
-        console.log("Creation Time:", currentUser.metadata.creationTime);
-        console.log("Last Sign In Time:", currentUser.metadata.lastSignInTime);
-        console.log("Tenant ID:", currentUser.tenantId);
-        console.log("Full User Object:", currentUser);
-        console.log("==========================================");
-      } else {
-        console.log("=== Auth State Changed: User Logged Out ===");
-      }
     });
 
     const unsubscribeToken = onIdTokenChanged(auth, (currentUser) => {
