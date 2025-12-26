@@ -1,0 +1,3054 @@
+[
+    {
+        "name": "Bohemian Bakery",
+        "category": "Bakery",
+        "rating": 5,
+        "address": "255 Saint Asaph Street, Christchurch Central City, Christchurch 8011",
+        "id": "bohemianbakery",
+        "filename": "bohemianbakery.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}, {"fileName": "fakeReel1.mp4", "id": 1}, {"fileName": "fakeReel2.mp4", "id": 2}, {"fileName": "fakeReel3.mp4", "id": 3}, {"fileName": "fakeReel.mp4", "id": 4}, {"fileName": "fakeReel1.mp4", "id": 5}, {"fileName": "fakeReel2.mp4", "id": 6}, {"fileName": "fakeReel3.mp4", "id": 7}, {"fileName": "fakeReel.mp4", "id": 8}, {"fileName": "fakeReel1.mp4", "id": 9}, {"fileName": "fakeReel2.mp4", "id": 10}, {"fileName": "fakeReel3.mp4", "id": 11}]
+    },
+    {
+        "name": "Tom's Sandwich Shop",
+        "category": "Sandwich",
+        "rating": 1.5,
+        "address": "36 Southwark Street, Christchurch Central City, Christchurch 8011",
+        "id": "tomssandwichshop",
+        "filename": "tomssandwichshop.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Sushi Time",
+        "category": "Sushi",
+        "rating": 3,
+        "address": "4/555 Colombo Street, Christchurch Central City, Christchurch 8011",
+        "id": "sushitime",
+        "filename": "sushitime.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Eightgrains Dumplings & Bao",
+        "category": "Chinese",
+        "rating": 5,
+        "address": "255 Saint Asaph Street, Christchurch Central City, Christchurch 8011",
+        "id": "eightgrains",
+        "filename": "eightgrains.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Sesame Noodle & Dumplings",
+        "category": "Japanese",
+        "rating": 4.5,
+        "address": "32 Oxford Terrace, Christchurch Central City, Christchurch 8011",
+        "id": "sesamenoodleanddumplings",
+        "filename": "sesamenoodleanddumplings.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Tony's Teppanyaki",
+        "category": "Japanese",
+        "rating": 1,
+        "address": "2 Waterman Place, Woolston, Christchurch 8023",
+        "id": "tonysteppanyaki",
+        "filename": "tonysteppanyaki.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "St Pierres",
+        "category": "Sushi",
+        "rating": 5,
+        "address": "Shop 63, Northlands Shopping Centre 55 Main North Road, Papanui, Christchurch 8052",
+        "id": "stpierres",
+        "filename": "stpierres.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Pizza Hut",
+        "category": "Pizza",
+        "rating": 3,
+        "address": "205 Hills Road, Edgeware, Christchurch 8013",
+        "id": "pizzahut",
+        "filename": "pizzahut.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Subway",
+        "category": "Sandwich",
+        "rating": 5,
+        "address": "202 Hills Road, Mairehau, Christchurch 8013",
+        "id": "subway",
+        "filename": "subway.jpeg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Mcdonalds",
+        "category": "Burger",
+        "rating": 1,
+        "address": "14 Washington Way, Sydenham, Christchurch 8240",
+        "id": "mcdonalds",
+        "filename": "mcdonalds.jpeg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Burger Fuel",
+        "category": "Burger",
+        "rating": 5,
+        "address": "290 Colombo Street, Sydenham, Christchurch 8023",
+        "id": "burgerfuel",
+        "filename": "burgerfuel.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Dominos",
+        "category": "Pizza",
+        "rating": 1,
+        "address": "204 Hills Road, Edgeware, Christchurch 8013",
+        "id": "dominos",
+        "filename": "dominos.jpg",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Placeholder",
+        "category": "Chinese",
+        "rating": 1,
+        "address": "fakeAddy 123 fakeAddy",
+        "id": "",
+        "filename": "",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    },
+    {
+        "name": "Placeholder2",
+        "category": "Chinese",
+        "rating": 1,
+        "address": "fakeAddy 456 fakeAddy",
+        "id": "",
+        "filename": "",
+        "openinghours": {
+            "Monday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Tuesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Wednesday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Thursday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Friday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Saturday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            },
+            "Sunday": {
+                "isOpen": true,
+                "open": "09:00",
+                "close": "22:30"
+            }
+        },
+        "menu": {
+            "offers": {
+                "offer1": {
+                    "offerType": "discount",
+                    "quantity": 100,
+                    "item": ""
+                },
+                "offer2": {
+                    "offerType": "discount",
+                    "quantity": 200,
+                    "item": ""
+                },
+                "offer3": {
+                    "offerType": "discount",
+                    "quantity": 500,
+                    "item": ""
+                }
+            },
+            "categories": [
+                {
+                    "categoryname": "Savoury Goods",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Baked Treats",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Bread",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Sandwiches",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Pies",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                },
+                {
+                    "categoryname": "Drinks",
+                    "items": [
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        },
+                        {
+                            "item": "",
+                            "price": "",
+                            "isAvailable": true
+                        }
+                    ]
+                }
+            
+            ]
+        },
+        "reels": [{"fileName": "fakeReel.mp4", "id": 0}]
+    }
+]
