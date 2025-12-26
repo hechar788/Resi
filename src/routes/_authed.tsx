@@ -2,6 +2,8 @@ import { createFileRoute, Outlet, redirect } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import type { DecodedIdToken } from 'firebase-admin/auth'
 
+import { BottomNav } from '@/components/navigation/BottomNav'
+
 interface AuthContext {
   user?: DecodedIdToken
 }
@@ -110,5 +112,10 @@ export const Route = createFileRoute('/_authed')({
 })
 
 function AuthedLayout() {
-  return <Outlet />
+  return (
+    <>
+      <Outlet />
+      <BottomNav />
+    </>
+  )
 }
