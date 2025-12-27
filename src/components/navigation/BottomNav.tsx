@@ -1,5 +1,5 @@
 import { Link, useMatchRoute } from "@tanstack/react-router"
-import { Home, UtensilsCrossed, User } from "lucide-react"
+import { Binoculars, ChefHat, MessageCircle, UtensilsCrossed, User } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -36,13 +36,15 @@ interface BottomNavProps {
 }
 
 /**
- * Fixed bottom navigation bar with Home, Eats, and Profile links.
+ * Fixed bottom navigation bar with My Feed, Forage, Messages, Eatery, and Profile links.
  * Mobile-first design with active state indication.
  */
 export function BottomNav({ className }: BottomNavProps) {
   const matchRoute = useMatchRoute()
 
   const isHomeActive = matchRoute({ to: "/" })
+  const isExploreActive = matchRoute({ to: "/explore" })
+  const isMessagesActive = matchRoute({ to: "/messages" })
   const isEatsActive =
     matchRoute({ to: "/eats" }) !== false ||
     matchRoute({ to: "/eats/$merchantId", fuzzy: true }) !== false
@@ -56,11 +58,23 @@ export function BottomNav({ className }: BottomNavProps) {
       )}
     >
       <div className="flex items-center h-[72px] gap-3 md:gap-4">
-        <NavLink to="/" icon={Home} label="Home" isActive={!!isHomeActive} />
+        <NavLink to="/" icon={ChefHat} label="My Feed" isActive={!!isHomeActive} />
+        <NavLink
+          to="/explore"
+          icon={Binoculars}
+          label="Forage"
+          isActive={!!isExploreActive}
+        />
+        <NavLink
+          to="/messages"
+          icon={MessageCircle}
+          label="Messages"
+          isActive={!!isMessagesActive}
+        />
         <NavLink
           to="/eats"
           icon={UtensilsCrossed}
-          label="Eats"
+          label="Eatery"
           isActive={!!isEatsActive}
         />
         <NavLink
