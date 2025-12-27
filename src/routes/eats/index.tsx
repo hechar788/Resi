@@ -84,51 +84,53 @@ function EatsPage() {
 
   return (
     <div className="flex flex-col min-h-screen pb-20">
-      {/* Location Picker (disabled, TODO) */}
-      <LocationPicker location="Current Location" onLocationChange={() => {}} disabled />
+      <div className="w-full md:max-w-[80%] md:mx-auto">
+        {/* Location Picker (disabled, TODO) */}
+        <LocationPicker location="Current Location" onLocationChange={() => {}} disabled />
 
-      {/* Sticky Search Bar */}
-      <div className="sticky top-0 z-40 bg-background border-b p-4">
-        <SearchBar
-          value={searchQuery}
-          onValueChange={handleSearchChange}
-          onRatingFilterChange={(rating) => {
-            navigate({
-              search: (prev) => ({ ...prev, minRating: rating || undefined }),
-            })
-          }}
-          onCategoryFilterChange={(category) => {
-            setSelectedCuisine(category)
-            navigate({
-              search: (prev) => ({ ...prev, category: category || undefined }),
-            })
-          }}
+        {/* Sticky Search Bar */}
+        <div className="sticky top-0 z-40 bg-background border-b p-4">
+          <SearchBar
+            value={searchQuery}
+            onValueChange={handleSearchChange}
+            onRatingFilterChange={(rating) => {
+              navigate({
+                search: (prev) => ({ ...prev, minRating: rating || undefined }),
+              })
+            }}
+            onCategoryFilterChange={(category) => {
+              setSelectedCuisine(category)
+              navigate({
+                search: (prev) => ({ ...prev, category: category || undefined }),
+              })
+            }}
+          />
+        </div>
+
+        {/* Cuisine Carousel */}
+        <CuisineCarousel
+          selectedCuisine={selectedCuisine}
+          onSelectCuisine={handleCuisineChange}
         />
-      </div>
 
-      {/* Cuisine Carousel */}
-      <CuisineCarousel
-        selectedCuisine={selectedCuisine}
-        onSelectCuisine={handleCuisineChange}
-      />
-
-      {/* Merchant Grid or Empty State */}
-      <div className="flex-1 p-4">
-        {filteredMerchants.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {filteredMerchants.map((merchant) => (
-              <MerchantCard key={merchant.id} merchant={merchant} />
-            ))}
-          </div>
-        ) : (
-          <div className="flex flex-col items-center justify-center py-16 text-center">
-            <UtensilsCrossed className="h-16 w-16 text-muted-foreground mb-4" />
-            <h3 className="text-lg font-semibold">No merchants found</h3>
-            <p className="text-sm text-muted-foreground">
-              Try adjusting your search or filters
-            </p>
-          </div>
-        )}
+        {/* Merchant Grid or Empty State */}
+        <div className="flex-1 p-4">
+          {filteredMerchants.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {filteredMerchants.map((merchant) => (
+                <MerchantCard key={merchant.id} merchant={merchant} />
+              ))}
+            </div>
+          ) : (
+            <div className="flex flex-col items-center justify-center py-16 text-center">
+              <UtensilsCrossed className="h-16 w-16 text-muted-foreground mb-4" />
+              <h3 className="text-lg font-semibold">No merchants found</h3>
+              <p className="text-sm text-muted-foreground">
+                Try adjusting your search or filters
+              </p>
+            </div>
+          )}
+        </div>
       </div>
       <BottomNav />
     </div>

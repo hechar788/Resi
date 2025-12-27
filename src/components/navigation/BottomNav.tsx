@@ -20,7 +20,8 @@ function NavLink({ to, icon: Icon, label, isActive }: NavLinkProps) {
     <Link
       to={to}
       className={cn(
-        "flex flex-col items-center justify-center gap-1 py-2 px-4 transition-colors",
+        "flex flex-col items-center justify-center gap-1 py-1 px-2 md:px-3 transition-all rounded-lg w-20",
+        "hover:bg-accent hover:scale-105",
         isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
       )}
     >
@@ -50,11 +51,11 @@ export function BottomNav({ className }: BottomNavProps) {
   return (
     <nav
       className={cn(
-        "fixed bottom-0 left-0 right-0 z-50 bg-background border-t",
+        "fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-background border rounded-full shadow-lg px-6",
         className
       )}
     >
-      <div className="flex justify-around items-center h-16 max-w-2xl mx-auto px-4">
+      <div className="flex items-center h-[72px] gap-3 md:gap-4">
         <NavLink to="/" icon={Home} label="Home" isActive={!!isHomeActive} />
         <NavLink
           to="/eats"
