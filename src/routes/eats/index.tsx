@@ -84,12 +84,12 @@ function EatsPage() {
 
   return (
     <div className="flex flex-col min-h-screen pb-20">
-      <div className="w-full md:max-w-[80%] md:mx-auto">
+      <div className="w-full md:max-w-[80%] md:mx-auto mt-4">
         {/* Location Picker (disabled, TODO) */}
         <LocationPicker location="Current Location" onLocationChange={() => {}} disabled />
 
         {/* Sticky Search Bar */}
-        <div className="sticky top-0 z-40 bg-background border-b p-4">
+        <div className="sticky top-0 z-40 bg-background p-4">
           <SearchBar
             value={searchQuery}
             onValueChange={handleSearchChange}
@@ -108,10 +108,12 @@ function EatsPage() {
         </div>
 
         {/* Cuisine Carousel */}
-        <CuisineCarousel
-          selectedCuisine={selectedCuisine}
-          onSelectCuisine={handleCuisineChange}
-        />
+        <div className="px-4">
+          <CuisineCarousel
+            selectedCuisine={selectedCuisine}
+            onSelectCuisine={handleCuisineChange}
+          />
+        </div>
 
         {/* Merchant Grid or Empty State */}
         <div className="flex-1 p-4">
