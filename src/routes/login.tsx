@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { AuthForm } from "@/components/auth/AuthForm";
 import { useAuthState } from "@/components/auth/useAuthState";
@@ -11,40 +11,56 @@ export const Route = createFileRoute('/login')({
 });
 
 /**
- * Login page with authentication form and user state display
+ * Login page with authentication form and user state display.
+ * Automatically redirects authenticated users to their intended destination.
  */
 function LoginPage() {
-  const { user } = useAuthState();
+  const { user, loading } = useAuthState();
   const search = Route.useSearch();
+  const navigate = useNavigate();
   const redirectTo = search.redirect || "/";
 
   useEffect(() => {
-    if (!user) {
+    // Only redirect after loading is complete and user is authenticated
+    if (loading || !user) {
       return;
     }
 
-    // Use window.location for dynamic redirects to avoid TypeScript errors
-    window.location.href = redirectTo;
-  }, [redirectTo, user]);
+    // User is authenticated, navigate to redirect path
+    // Using TanStack Router's navigate preserves auth state, unlike window.location
+    navigate({ to: redirectTo as any });
+  }, [user, loading, redirectTo, navigate]);
 
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
-      {user ? (
-        <div className="flex min-h-screen items-center justify-center">
-          <div className="text-center">
-            <div className="animate-pulse text-muted-foreground">
-              Redirecting...
-            </div>
+  // Show loading state while checking authentication
+  if (loading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+        <div className="text-center">
+          <div className="animate-pulse text-muted-foreground">
+            Loading...
           </div>
         </div>
-      ) : (
-        <AuthForm
-          onAuthenticated={() => {
-            // Use window.location for dynamic redirects to avoid TypeScript errors
-            window.location.href = redirectTo;
-          }}
-        />
-      )}
+      </div>
+    );
+  }
+
+  // Show redirecting state if user is authenticated
+  if (user) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+        <div className="text-center">
+          <div className="animate-pulse text-muted-foreground">
+            Redirecting...
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Show auth form if not authenticated
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+      <AuthForm />
     </div>
   );
 }
