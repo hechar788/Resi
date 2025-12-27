@@ -63,7 +63,7 @@ function CuisineButton({
     <button
       onClick={onClick}
       className={cn(
-        "flex flex-col items-center gap-1 min-w-[80px] p-2 rounded-lg transition-colors shrink-0",
+        "flex flex-col items-center gap-1 min-w-[80px] p-2 rounded-lg transition-colors shrink-0 cursor-pointer",
         isActive
           ? "bg-primary text-primary-foreground"
           : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
