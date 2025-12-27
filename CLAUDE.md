@@ -107,7 +107,13 @@
 - Follow the existing short, imperative history (`Update auth header`, `Add customer table`); keep subjects under 60 characters.
 - Scope commits narrowly (UI copy, schema change, etc.) and include migration files whenever schemas move.
 - Describe motivation + approach, list impacted routes/components.
-- **DONT** take credit for any commits/pull requests
+- **After implementing a feature or fix, provide a suggested commit message** that summarizes the changes clearly and professionally.
+- **NEVER include any AI attribution in commits:**
+  - NO "Co-Authored-By: Claude..." lines
+  - NO "Generated with Claude Code" footers or links
+  - NO emoji or branding in commit messages
+  - Commit messages should appear as if written by the repository owner
+- The commit message should focus purely on what changed and why, using clear technical language
 
 
 ## Security & Configuration Tips
