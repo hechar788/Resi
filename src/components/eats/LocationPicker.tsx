@@ -24,18 +24,20 @@ export function LocationPicker({
   disabled = true,
 }: LocationPickerProps) {
   return (
-    <div className="flex items-center gap-2 px-4 py-2 bg-muted/50 border-b">
-      <MapPin className="h-4 w-4 text-muted-foreground" />
-      <span className="text-sm font-medium flex-1">{location}</span>
-      <Button
-        variant="link"
-        size="sm"
-        disabled={disabled}
-        onClick={() => onLocationChange("")}
-        className="text-xs"
-      >
-        Change (TODO)
-      </Button>
+    <div className="px-4">
+      <div className="flex items-center gap-2 px-4 py-2 bg-muted/50 border-b">
+        <MapPin className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm font-medium flex-1">{location}</span>
+        <Button
+          variant="link"
+          size="sm"
+          disabled={disabled}
+          onClick={() => onLocationChange("")}
+          className="text-xs"
+        >
+          Change (TODO)
+        </Button>
+      </div>
     </div>
   )
 }

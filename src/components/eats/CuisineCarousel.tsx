@@ -85,7 +85,7 @@ export function CuisineCarousel({
 }: CuisineCarouselProps) {
   return (
     <div className="overflow-x-auto scrollbar-hide">
-      <div className="flex gap-4 px-4 py-3">
+      <div className="flex gap-4 py-3">
         {CUISINE_TYPES.map((cuisine) => (
           <CuisineButton
             key={cuisine}
