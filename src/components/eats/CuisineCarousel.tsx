@@ -4,7 +4,6 @@ import {
   Cookie,
   Fish,
   Flame,
-  Salad,
   Sandwich,
   Soup,
   UtensilsCrossed,

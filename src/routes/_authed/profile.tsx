@@ -11,7 +11,7 @@ export const Route = createFileRoute('/_authed/profile')({
  * Authenticated profile page that surfaces user info and allows logout.
  */
 function ProfilePage() {
-  const { user } = Route.useRouteContext({ from: '/_authed' })
+  const { user } = Route.useRouteContext()
   const navigate = Route.useNavigate()
 
   const handleLogout = async () => {

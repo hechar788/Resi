@@ -72,7 +72,7 @@ export interface Merchant {
   openinghours: OpeningHours // Note: lowercase 'h' to match EatUp JSON
   imageUrl?: string // Added by loader
   menu: {
-    offers?: Record<string, unknown>
+    offers?: Record<string, any>
     categories: MenuCategory[]
   }
   // TODO: Add reels support later

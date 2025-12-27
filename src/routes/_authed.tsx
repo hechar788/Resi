@@ -1,6 +1,7 @@
 import { createFileRoute, Outlet, redirect } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import type { DecodedIdToken } from 'firebase-admin/auth'
+import type { User } from 'firebase/auth'
 
 import { BottomNav } from '@/components/navigation/BottomNav'
 
@@ -55,15 +56,15 @@ const getClientToken = async (): Promise<string | null> => {
     return null
   }
 
-  const [{ auth }, firebaseAuth] = await Promise.all([
+  const [{ auth }, { onAuthStateChanged }] = await Promise.all([
     import('@/lib/firebase/firebase'),
     import('firebase/auth'),
   ])
 
   const user =
     auth.currentUser ??
-    (await new Promise<firebaseAuth.User | null>((resolve) => {
-      const unsubscribe = firebaseAuth.onAuthStateChanged(auth, (nextUser) => {
+    (await new Promise<User | null>((resolve) => {
+      const unsubscribe = onAuthStateChanged(auth, (nextUser) => {
         unsubscribe()
         resolve(nextUser)
       })

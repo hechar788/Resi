@@ -13,6 +13,13 @@ export const MOCK_MERCHANTS: Merchant[] = rawMerchants
   .map((merchant) => ({
     ...merchant,
     imageUrl: bohemianBakeryImage,
+    menu: {
+      ...merchant.menu,
+      categories: merchant.menu.categories.map((category: any) => ({
+        categoryName: category.categoryname || category.categoryName,
+        items: category.items,
+      })),
+    },
   })) as Merchant[]
 
 /**

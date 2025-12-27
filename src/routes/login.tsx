@@ -2,9 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { AuthForm } from "@/components/auth/AuthForm";
 import { useAuthState } from "@/components/auth/useAuthState";
-import { Button } from "@/components/ui/button";
-import { signOut } from "firebase/auth";
-import { auth } from "@/lib/firebase/firebase";
 
 export const Route = createFileRoute('/login')({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -19,27 +16,16 @@ export const Route = createFileRoute('/login')({
 function LoginPage() {
   const { user } = useAuthState();
   const search = Route.useSearch();
-  const navigate = Route.useNavigate();
   const redirectTo = search.redirect || "/";
-
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-    } catch (error) {
-      console.error("Logout error:", error);
-    }
-  };
 
   useEffect(() => {
     if (!user) {
       return;
     }
 
-    void navigate({
-      to: redirectTo,
-      replace: true,
-    });
-  }, [navigate, redirectTo, user]);
+    // Use window.location for dynamic redirects to avoid TypeScript errors
+    window.location.href = redirectTo;
+  }, [redirectTo, user]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
@@ -53,12 +39,10 @@ function LoginPage() {
         </div>
       ) : (
         <AuthForm
-          onAuthenticated={() =>
-            navigate({
-              to: redirectTo,
-              replace: true,
-            })
-          }
+          onAuthenticated={() => {
+            // Use window.location for dynamic redirects to avoid TypeScript errors
+            window.location.href = redirectTo;
+          }}
         />
       )}
     </div>
